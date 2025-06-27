@@ -43,8 +43,20 @@
 </header>
 <div id="barraProgreso" style="height: 6px; background-color: #007BFF; width: 0%; position: fixed; top: 0; left: 0; z-index: 999; transition: width 0.4s;"></div>
 <div class="container">
-  <!-- Secciones mantenidas y ajustadas: Bienvenida, Objetivo, Políticas, Riesgos administrativos, etc. -->
-  <!-- Las secciones eliminadas ya no estarán aquí -->
+<section class="active">
+  <div class="img-superior-derecha">
+    <img src="https://i.postimg.cc/CLSFNhyN/LOGO-PBI-CASCO-BLANCO.png" alt="Personaje PBI con EPP">
+  </div>
+  <div class="seccion-contenido">
+    <h2>👋 Bienvenido a la Inducción HSEQ – Visitantes y Contratistas</h2>
+    <p>Esta inducción está diseñada para brindarte la información clave que necesitas para actuar de forma <strong>segura</strong>, <strong>responsable</strong> y en coherencia con nuestra <strong>cultura HSEQ</strong>, ya sea que nos acompañes como visitante administrativo o como contratista que realiza adecuaciones u obras civiles en nuestras instalaciones.</p>
+    <p>📌 La inducción es <strong>obligatoria</strong>. Su aprobación es requisito previo para el desarrollo de actividades dentro de oficinas administrativas, sedes corporativas o zonas en intervención técnica.</p>
+    <p style="font-size: 16px; color: #007BFF; font-weight: bold; text-align: center; margin-top: 25px;">
+      ¡Gracias por contribuir con tu actitud a un entorno más seguro, ordenado y colaborativo! 🌿
+    </p>
+  </div>
+</section>
+
 </div>
 <div class="nav-buttons">
   <button id="btnAnterior" onclick="prevSection()">Anterior</button>
