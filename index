@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inducción HSEQ – Personal Administrativo</title>
+  <title>Inducción HSEQ – Visitantes y Contratistas</title>
   <style>
-    /* Mantiene todos los estilos originales sin secciones eliminadas */
     body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #f9f9f9; margin: 0; padding: 0; }
     header { background-color: #003366; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
     header img { height: auto; max-height: 60px; max-width: 140px; object-fit: contain; }
     .container { background-color: #fff; padding: 40px; max-width: 1000px; margin: 20px auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
     section { display: none; opacity: 0; transition: opacity 0.6s ease-in-out; }
     section.active { display: block; opacity: 1; }
-    .nav-buttons { display: flex; justify-content: space-between; margin-top: 20px; }
+    .nav-buttons { display: flex; justify-content: space-between; margin: 20px auto; max-width: 1000px; }
     button { background-color: #006599; color: white; font-weight: bold; font-size: 16px; padding: 12px 24px; cursor: pointer; border: none; border-radius: 5px; transition: background-color 0.3s ease; }
     button:hover { background-color: #004d73; }
     button:focus { outline: 3px solid #ffa500; }
@@ -29,6 +28,14 @@
     .img-superior-derecha img { max-width: 100%; height: auto; display: block; }
     section.has-personaje { padding-right: 120px; }
     .grid-dos-columnas { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    #advertencia-check {
+      background-color: #ffe5e5;
+      border-left: 4px solid red;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-weight: bold;
+    }
     @media screen and (max-width: 768px) {
       .img-superior-derecha { float: none; display: block; margin: 0 auto 20px auto; text-align: center; }
       section.has-personaje { padding-right: 0; }
@@ -38,74 +45,47 @@
 </head>
 <body>
 <header>
-  <div><strong>Inducción HSEQ – Personal Administrativo</strong></div>
+  <div><strong>Inducción HSEQ – Visitantes y Contratistas</strong></div>
   <img src="https://i.postimg.cc/gcX7rNgd/Logo-PBI.png" alt="Logo PBI">
 </header>
+
 <div id="barraProgreso" style="height: 6px; background-color: #007BFF; width: 0%; position: fixed; top: 0; left: 0; z-index: 999; transition: width 0.4s;"></div>
+
 <div class="container">
-<section class="active">
-  <div class="img-superior-derecha">
-    <img src="https://i.postimg.cc/CLSFNhyN/LOGO-PBI-CASCO-BLANCO.png" alt="Personaje PBI con EPP">
-  </div>
-  <div class="seccion-contenido">
-    <h2>👋 Bienvenido a la Inducción HSEQ – Visitantes y Contratistas</h2>
-    <p>Esta inducción está diseñada para brindarte la información clave que necesitas para actuar de forma <strong>segura</strong>, <strong>responsable</strong> y en coherencia con nuestra <strong>cultura HSEQ</strong>, ya sea que nos acompañes como visitante administrativo o como contratista que realiza adecuaciones u obras civiles en nuestras instalaciones.</p>
-    <p>📌 La inducción es <strong>obligatoria</strong>. Su aprobación es requisito previo para el desarrollo de actividades dentro de oficinas administrativas, sedes corporativas o zonas en intervención técnica.</p>
-    <p style="font-size: 16px; color: #007BFF; font-weight: bold; text-align: center; margin-top: 25px;">
-      ¡Gracias por contribuir con tu actitud a un entorno más seguro, ordenado y colaborativo! 🌿
-    </p>
-  </div>
-</section>
+
+  <!-- Sección 1 -->
+  <section class="active">
+    <div class="img-superior-derecha">
+      <img src="https://i.postimg.cc/CLSFNhyN/LOGO-PBI-CASCO-BLANCO.png" alt="Personaje PBI con EPP">
+    </div>
+    <div class="seccion-contenido">
+      <h2>👋 Bienvenido a la Inducción HSEQ – Visitantes y Contratistas</h2>
+      <p>Esta inducción está diseñada para brindarte la información clave que necesitas para actuar de forma <strong>segura</strong>, <strong>responsable</strong> y en coherencia con nuestra <strong>cultura HSEQ</strong>.</p>
+      <p>📌 La inducción es <strong>obligatoria</strong>. Su aprobación es requisito previo para el desarrollo de actividades dentro de oficinas administrativas, sedes corporativas o zonas de intervención técnica.</p>
+      <p style="font-size: 16px; color: #007BFF; font-weight: bold; text-align: center; margin-top: 25px;">
+        ¡Gracias por contribuir con tu actitud a un entorno más seguro, ordenado y colaborativo! 🌿
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección 2 -->
+  <section>
+    <div class="seccion-contenido">
+      <h2>✅ Recomendaciones de seguridad antes de ingresar</h2>
+      <ul style="list-style: none; padding-left: 0;">
+        <li><label><input type="checkbox"> Recibiste la charla de inducción completa.</label></li>
+        <li><label><input type="checkbox"> Usas el EPP completo requerido para el área a visitar.</label></li>
+        <li><label><input type="checkbox"> Conoces los puntos de encuentro y rutas de evacuación.</label></li>
+        <li><label><input type="checkbox"> Entiendes las tareas de alto riesgo y sus restricciones.</label></li>
+        <li><label><input type="checkbox"> No portar celular en áreas operativas.</label></li>
+        <li><label><input type="checkbox"> Cumples normas de seguridad vial y comportamiento.</label></li>
+      </ul>
+    </div>
+  </section>
 
 </div>
+
 <div class="nav-buttons">
   <button id="btnAnterior" onclick="prevSection()">Anterior</button>
   <button id="btnSiguiente" onclick="nextSection()">Siguiente</button>
 </div>
-<script>
-  let current = 0;
-  const sections = document.querySelectorAll("section");
-  const btnAnterior = document.getElementById("btnAnterior");
-  const btnSiguiente = document.getElementById("btnSiguiente");
-  function show(index) {
-    sections.forEach((s, i) => {
-      s.classList.toggle("active", i === index);
-    });
-    btnAnterior.style.display = (index === 0) ? "none" : "inline-block";
-    btnSiguiente.style.display = (index === sections.length - 1) ? "none" : "inline-block";
-    const progreso = ((index + 1) / sections.length) * 100;
-    document.getElementById("barraProgreso").style.width = progreso + "%";
-    const advertencia = document.getElementById("advertencia-check");
-    if (advertencia) advertencia.remove();
-  }
-  function nextSection() {
-    if (current === 12) {
-      const checkboxes = sections[current].querySelectorAll('input[type="checkbox"]');
-      const todosMarcados = Array.from(checkboxes).every(cb => cb.checked);
-      if (!todosMarcados) {
-        if (!document.getElementById("advertencia-check")) {
-          const advertencia = document.createElement("p");
-          advertencia.id = "advertencia-check";
-          advertencia.textContent = "⚠️ Por favor marca todos los ítems antes de continuar.";
-          advertencia.style.color = "red";
-          advertencia.style.marginTop = "15px";
-          sections[current].appendChild(advertencia);
-        }
-        return;
-      }
-    }
-    if (current < sections.length - 1) {
-      current++;
-      show(current);
-    }
-  }
-  function prevSection() {
-    if (current > 0) {
-      current--;
-      show(current);
-    }
-  }
-  document.addEventListener("DOMContentLoaded", () => show(current));
-</script>
-</body>
-</html>
