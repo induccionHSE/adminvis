@@ -789,7 +789,7 @@ details ul {
 
   function nextSection() {
     // Verifica si estamos en la sección 13 (índice 12)
-    if (current === 12) {
+    if (sections[current].querySelector('h2')?.textContent.includes("VERIFICACIÓN FINAL")) {
       const checkboxes = sections[current].querySelectorAll('input[type="checkbox"]');
       const todosMarcados = Array.from(checkboxes).every(cb => cb.checked);
 
